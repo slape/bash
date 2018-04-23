@@ -1,9 +1,9 @@
 #!/bin/bash
 
-//Initializes directory structure for a basic website.
-//to use it: sh new-site.sh <name of website>
+#Initializes directory structure for a basic website.
+#to use it: sh new-site.sh <name of website>
 
-//todo: use the github api to automatically create a new repo with the same name, attach it as a remote origin, and send an initial readme push.
+#todo: use the github api to automatically create a new repo with the same name, attach it as a remote origin, and send an initial readme push.
 
 mkdir $1
 cd $1
