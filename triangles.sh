@@ -16,7 +16,7 @@ elif (( $x != $y && $x != $z && $y != $z )); then
 echo ''
 echo This is a scalene triangle.
 echo ''
-elif (( $x != $y && $x == $z || $x != $z && $x == $y )); then
+elif (( $x != $y && $x == $z || $x != $z && $x == $y || $z == $y && $y != $x )); then
 echo ''
 echo This is an isosceles triangle.
 echo ''
