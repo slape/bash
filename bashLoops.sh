@@ -18,6 +18,15 @@ done
 
 echo ""
 
+#lists only odd numbers
+for (( i = 0; i <= 99; i++ )); do
+    if  (( $i % 2 != 0 )); then
+        echo $i
+    fi
+done
+
+echo ""
+
 #loops through the files in the directory and applies an action (ls in this case)
 dirlist=`ls`
 for i in $dirlist; do
