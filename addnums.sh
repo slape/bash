@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#simple script to practice using variables
+#simple script to add numbers with variables
 let c=$1+$2
 
 if [[ $c -eq 10 ]]; then
