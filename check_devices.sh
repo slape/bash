@@ -20,5 +20,5 @@ currentDevices=`curl -u $user $restUrl/Device?availability=Online | jq '.[].name
 if (( $currentDevices == 0 )); then
   mail -s  "$server may be down or offline" $email <<< "The curl command for $server is not returning any data. Something is wrong."
 elif  (( $deviceCount != $currentDevices )); then
-  mail -s  "$server has a device offline" $email <<< "One or more devices has gone offline server $server"
+  mail -s  "$server has a device offline" $email <<< "One or more devices has gone offline for server $server"
 fi
