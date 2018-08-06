@@ -8,7 +8,7 @@ read y
 echo Enter the integer of the third side:
 read z
 
-if (( $x == $y && $x == z )); then
+if (( $x == $y && $x == $z )); then
   echo ''
   echo This is an equilateral triangle.
   echo ''
