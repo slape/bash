@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#pass pictures.zip as an argument.
 #Create a Sorted_Folder and subfolders for each picture type
 echo "Extracting Files and Pictures."
 

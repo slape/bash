@@ -54,3 +54,12 @@ ls -la | while read line; do
     echo The file $fileName is owned by root.
   fi
 done
+
+
+# readarray books < ../catalog.info
+
+# for ix in ${!books[*]}; do
+#   echo "${books[$ix]}" | tr -d '[:space:]' | tr -d "'" | xargs mkdir
+#   echo "${books[$ix]}" | tr -d "'" | sed 's/ /_/g'
+#   find ../../ -type f -iname "${books[$ix]}" -exec cp {} . \;
+# done

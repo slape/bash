@@ -25,10 +25,10 @@ printf "\nCompleted by John\n" >> $report
 grep -i "DONE" $jon/$all | tee $jon/$done | wc -l >> $report
 #3. Within each of the folders, create a file called **unfinished.txt** that
 #includes only to-dos not marked as done. | Append to the Final Productivity Report.
-printf "Items Yet ToDo:\n---------------------------------------\n\n" > $report
-printf "\ToDo for Jennifer\n" >> $report
+printf "Items Yet ToDo:\n---------------------------------------\n\n" >> $report
+printf "\nToDo for Jennifer\n" >> $report
 grep -iv "DONE" $jen/$all | tee $jen/$todo | wc -l >> $report
-printf "\ToDo for Carrie\n" >> $report
+printf "\nToDo for Carrie\n" >> $report
 grep -iv "DONE" $car/$all | tee $car/$todo | wc -l >> $report
-printf "\ToDo for John\n" >> $report
+printf "\nToDo for John\n" >> $report
 grep -iv "DONE" $jon/$all | tee $jon/$todo | wc -l >> $report
